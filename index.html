@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="logo"></div>
+            <span>Meteor Sorter</span>
+            <div class="gamburger-container">
+                <button id="open_menu">&#9776;</button>
+                <div class="menu_gamburger">
+                    <ul>
+                        <li><a href="">GitHub</a></li>
+                        <li><a href="">Преимущества</a></li>
+                        <li><a href="">Услуги</a></li>
+                        <li><a href="">О программе</a></li>
+                    </ul>
+                </div>
+                <button id="close_menu">&#10006;</button>
+            </div>
+            <ul class="nav-tabs">
+                <li><a href="">GitHub</a></li>
+                <li><a href="">Преимущества</a></li>
+                <li><a href="">Услуги</a></li>
+                <li><a href="">О программе</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h1 class="mainHeader">Meteor Sorter</h1>
+            <p class="description">Optimize, filter, enjoy</p>
+            <div class="buttons">
+                <button type="submit" class="dwnButton">Скачать</button>
+                <a href="" class="goToGit">Перейти на GitGub _></a>
+            </div>
+        </header>
+        <div class="banner"> </div>
+        <div class="content">
+            <div class="futures">
+                <h2>Преимущества</h2>
+                <div class="futures-columns">
+                    <div class="future-column">
+                        <div class="center">
+                            <div class="checkIcon"></div>
+                        </div>
+                        <h3>Гарантии</h3>
+                        <p>После исполнения алгоритмов программы, ваши файлы не удаляться и тем более никуда не пропадут
+                        </p>
+                    </div>
+                    <div class="future-column">
+                        <div class="center">
+                            <div class="FileIcon"></div>
+                        </div>
+                        <h3>Оптимизация</h3>
+                        <p>С помощью данной программы, вы сможете с помощью специального редактора создать ‘правила’ для
+                            сортировки и все ваши файлы будут структурированы всего в один клик
+                        </p>
+                    </div>
+                    <div class="future-column">
+                        <div class="center">
+                            <div class="RebootIcon"></div>
+                        </div>
+                        <h3>Обновления</h3>
+                        <p>На данный момент программа
+                            не имеет графического интерфейса, а создана исключительно для тестирования библиотек классов
+                            написанных для ее работы с нуля в дальнейшем
+                        </p>
+                    </div>
+                    <div class="future-column">
+                        <div class="center">
+                            <div class="DownloadIcon"></div>
+                        </div>
+                        <h3>Удобная загрузка</h3>
+                        <p>Вы можете загрузить приложение на ваш ПК в пару кликов
+                            А для запуска вам даже не потребуется установка
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="slider">
+                    <!--Slider-->
+                    <div id="slider">
+                        <div class="slide" style="background:#20232a;">
+                          <div class="electronImage"></div>
+                        </div>
+
+                        <div class="slide" style="background:#20232a;">
+                            <div class="exImage"></div>
+                        </div>
+
+                        <div class="slide" style="background:#20232a;">
+                           <div class="codeImage"></div>
+                        </div>
+
+
+                        <!--Controlling arrows-->
+                        <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left"
+                                aria-hidden="true"></i>
+                        </span>
+                        <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right"
+                                aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div id="dots-con">
+                        <span class="dot" onclick="prevSlide(-1)"></span><span class="dot"
+                            onclick="nextSlide(1)"></span><span class="dot" onclick="nextSlide(1)"></span>
+                    </div>
+
+
+                </div>
+                <div class="pc-services">
+                    <h2>Услуги</h2>
+                    <div class="services-columns">
+                        <div class="service-column">
+                            <h3>Совместная разработка</h3>
+                            <div class="block">
+                                <div class="center-block">
+                                    <div class="electronImage"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-column">
+                            <h3>Открытый исходный код</h3>
+                            <div class="block">
+                                <div class="center-block">
+                                    <div class="codeImage"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-column">
+                            <h3>Фильтрация</h3>
+                            <div class="block">
+                                <div class="center-block">
+                                    <div class="exImage"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form">
+                <h2>Запись на бета-тестирование</h2>
+                <form action="">
+                    <p><label for="email">Укажите вашу почту: </label><input type="text" placeholder="Email"></p>
+                    <p> <label for="versions">Выберете версию программы:</label>
+                        <select name="versions" id="versions">
+                            <option value="0.0.1f beta">Version 0.0.1f beta</option>
+                            <option value="0.0.2f beta">Version 0.0.2f beta</option>
+                            <option value="0.0.3f beta">Version 0.0.3f beta</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="versions">Выберете язык программы:</label>
+                        <select name="versions" id="versions">
+                            <option value="en">English</option>
+                            <option value="ru">Russian</option>
+                        </select>
+                    </p>
+
+                    <p>Собирать анонимные отчеты: <input type="checkbox"><button class="zpBtn" type="submit"
+                            value="Записаться">Записаться</button></p>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="data">
+            <div class="info-block">
+                <ul>
+                    <li>Информация</li>
+                    <li>Заметки о разработке</li>
+                    <li>Как запустить программу</li>
+                    <li>Локализация</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <ul>
+                    <li>Настройки</li>
+                    <li>Как настроить</li>
+                    <li>Как создать сценарий</li>
+                    <li>Автозапуск</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <ul>
+                    <li>Документация</li>
+                    <li>Исходный код</li>
+                    <li>Сценарии сортировки</li>
+                    <li>Автоматическая сортировка</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <div class="social-block">
+                    <div class="social-facebook social"> </div>
+                    <div class="social-youtube social"> </div>
+                    <div class="social-ln social"> </div>
+                </div>
+                <div class="social-block">
+                    <div class="social-instagram social"> </div>
+                    <div class="social-twitter social"> </div>
+                    <div class="social-wa social"> </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="Email_m">
+            <p>motyrev2004@mail.ru</p>
+            <p>Copyright © 2022 RedMoon</p>
+        </div>
+    </footer>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
